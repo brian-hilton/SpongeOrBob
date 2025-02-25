@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\repos\\SpongeBob\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7BCBEDD-C0E3-4B72-BF9B-38235EAF6DF4}|SpongeBob\\SpongeBob.csproj|c:\\repos\\spongebob\\spongebob\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7BCBEDD-C0E3-4B72-BF9B-38235EAF6DF4}|SpongeBob\\SpongeBob.csproj|solutionrelative:spongebob\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7BCBEDD-C0E3-4B72-BF9B-38235EAF6DF4}|SpongeBob\\SpongeBob.csproj|c:\\repos\\spongebob\\spongebob\\spongebob.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A7BCBEDD-C0E3-4B72-BF9B-38235EAF6DF4}|SpongeBob\\SpongeBob.csproj|solutionrelative:spongebob\\spongebob.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7BCBEDD-C0E3-4B72-BF9B-38235EAF6DF4}|SpongeBob\\SpongeBob.csproj|c:\\repos\\spongebob\\spongebob\\gamedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7BCBEDD-C0E3-4B72-BF9B-38235EAF6DF4}|SpongeBob\\SpongeBob.csproj|solutionrelative:spongebob\\gamedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7BCBEDD-C0E3-4B72-BF9B-38235EAF6DF4}|SpongeBob\\SpongeBob.csproj|c:\\repos\\spongebob\\spongebob\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BCBEDD-C0E3-4B72-BF9B-38235EAF6DF4}|SpongeBob\\SpongeBob.csproj|solutionrelative:spongebob\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7BCBEDD-C0E3-4B72-BF9B-38235EAF6DF4}|SpongeBob\\SpongeBob.csproj|c:\\repos\\spongebob\\spongebob\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7BCBEDD-C0E3-4B72-BF9B-38235EAF6DF4}|SpongeBob\\SpongeBob.csproj|solutionrelative:spongebob\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BCBEDD-C0E3-4B72-BF9B-38235EAF6DF4}|SpongeBob\\SpongeBob.csproj|c:\\repos\\spongebob\\spongebob\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BCBEDD-C0E3-4B72-BF9B-38235EAF6DF4}|SpongeBob\\SpongeBob.csproj|solutionrelative:spongebob\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BCBEDD-C0E3-4B72-BF9B-38235EAF6DF4}|SpongeBob\\SpongeBob.csproj|c:\\repos\\spongebob\\spongebob\\gamedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BCBEDD-C0E3-4B72-BF9B-38235EAF6DF4}|SpongeBob\\SpongeBob.csproj|solutionrelative:spongebob\\gamedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7BCBEDD-C0E3-4B72-BF9B-38235EAF6DF4}|SpongeBob\\SpongeBob.csproj|c:\\repos\\spongebob\\spongebob\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -51,27 +51,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GameHub.cs",
+              "DocumentMoniker": "C:\\repos\\SpongeBob\\SpongeBob\\Hubs\\GameHub.cs",
+              "RelativeDocumentMoniker": "SpongeBob\\Hubs\\GameHub.cs",
+              "ToolTip": "C:\\repos\\SpongeBob\\SpongeBob\\Hubs\\GameHub.cs",
+              "RelativeToolTip": "SpongeBob\\Hubs\\GameHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T22:43:42.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GameController.cs",
               "DocumentMoniker": "C:\\repos\\SpongeBob\\SpongeBob\\Controllers\\GameController.cs",
               "RelativeDocumentMoniker": "SpongeBob\\Controllers\\GameController.cs",
               "ToolTip": "C:\\repos\\SpongeBob\\SpongeBob\\Controllers\\GameController.cs",
               "RelativeToolTip": "SpongeBob\\Controllers\\GameController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwFMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAFMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T21:59:14.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SpongeBob.csproj",
-              "DocumentMoniker": "C:\\repos\\SpongeBob\\SpongeBob\\SpongeBob.csproj",
-              "RelativeDocumentMoniker": "SpongeBob\\SpongeBob.csproj",
-              "ToolTip": "C:\\repos\\SpongeBob\\SpongeBob\\SpongeBob.csproj",
-              "RelativeToolTip": "SpongeBob\\SpongeBob.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-25T21:43:59.554Z",
               "EditorCaption": ""
             },
             {
@@ -84,7 +84,8 @@
               "RelativeToolTip": "SpongeBob\\Migrations\\20250225215739_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T21:57:39.674Z"
+              "WhenOpened": "2025-02-25T21:57:39.674Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -96,11 +97,12 @@
               "RelativeToolTip": "SpongeBob\\Models\\Player.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T21:47:24.009Z"
+              "WhenOpened": "2025-02-25T21:47:24.009Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GameDbContext.cs",
               "DocumentMoniker": "C:\\repos\\SpongeBob\\SpongeBob\\GameDbContext.cs",
               "RelativeDocumentMoniker": "SpongeBob\\GameDbContext.cs",
@@ -121,7 +123,8 @@
               "RelativeToolTip": "SpongeBob\\Models\\GameSession.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T21:43:23.934Z"
+              "WhenOpened": "2025-02-25T21:43:23.934Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -133,19 +136,21 @@
               "RelativeToolTip": "SpongeBob\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-25T21:41:57.687Z"
+              "WhenOpened": "2025-02-25T21:41:57.687Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\repos\\SpongeBob\\SpongeBob\\Program.cs",
               "RelativeDocumentMoniker": "SpongeBob\\Program.cs",
               "ToolTip": "C:\\repos\\SpongeBob\\SpongeBob\\Program.cs",
               "RelativeToolTip": "SpongeBob\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T21:11:03.069Z"
+              "WhenOpened": "2025-02-25T21:11:03.069Z",
+              "EditorCaption": ""
             }
           ]
         }

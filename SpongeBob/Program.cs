@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using SpongeBob.Hubs;
 namespace SpongeBob
 {
     public class Program
@@ -11,13 +12,15 @@ namespace SpongeBob
             
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 
             app.UseHttpsRedirection();
             app.UseAuthorization();
             app.MapControllers();
-            app.MapGet("/", () => "Hello World!");
+
+            app.MapHub<GameHub>("/gamehub");
 
             app.Run();
         }

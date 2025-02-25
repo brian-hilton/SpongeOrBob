@@ -161,3 +161,8 @@ C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\refint\SpongeBob.dll
 C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\SpongeBob.pdb
 C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\SpongeBob.genruntimeconfig.cache
 C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\ref\SpongeBob.dll
+C:\repos\SpongeBob\SpongeBob\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\repos\SpongeBob\SpongeBob\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\repos\SpongeBob\SpongeBob\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\SpongeBob.MvcApplicationPartsAssemblyInfo.cs
+C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\SpongeBob.sourcelink.json

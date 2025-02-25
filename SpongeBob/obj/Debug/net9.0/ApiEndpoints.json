@@ -1,0 +1,97 @@
+[
+  {
+    "ContainingType": "SpongeBob.Controllers.GameController",
+    "Method": "CreateGame",
+    "RelativePath": "api/game/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hostPlayerId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpongeBob.Controllers.GameController",
+    "Method": "HostSelectWord",
+    "RelativePath": "api/game/host/select/{gameId}/{word}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gameId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpongeBob.Controllers.GameController",
+    "Method": "JoinGame",
+    "RelativePath": "api/game/join/{gameId}/{playerId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gameId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "playerId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpongeBob.Controllers.GameController",
+    "Method": "PlayerLockIn",
+    "RelativePath": "api/game/player/lockin/{playerId}/{lockinState}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "playerId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "lockInState",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpongeBob.Controllers.GameController",
+    "Method": "GetGameStatus",
+    "RelativePath": "api/game/status/{gameId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gameId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
