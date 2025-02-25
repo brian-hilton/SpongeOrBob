@@ -14,6 +14,7 @@ namespace SpongeBob.Controllers
             _context = context;
         }
 
+        // Create game session
         [HttpPost("create")]
         public async Task<IActionResult> CreateGame([FromBody] string hostPlayerId)
         {
@@ -29,6 +30,7 @@ namespace SpongeBob.Controllers
             return Ok(game);
         }
 
+        // Join game instance, verify game and playerId
         [HttpPost("join/{gameId}/{playerId}")]
         public async Task<IActionResult> JoinGame(int gameId, string playerId)
         {
@@ -40,6 +42,7 @@ namespace SpongeBob.Controllers
             return Ok(game);
         }
 
+        // Choose word
         [HttpPost("host/select/{gameId}/{word}")]
         public async Task<IActionResult> HostSelectWord(int gameId, string word)
         {
@@ -50,6 +53,32 @@ namespace SpongeBob.Controllers
 
             game.SelectedWord = word;
             await _context.SaveChangesAsync();
+            return Ok(game);
+        }
+
+        // Lock in
+        [HttpPost("player/lockin/{playerId}/{lockinState}")]
+        public async Task<IActionResult> PlayerLockIn(string playerId, bool lockInState)
+        {
+            var player = await _context.Players.FindAsync(playerId);
+            if (player == null) return NotFound("Player not found");
+
+            player.LockedIn = lockInState;
+            await _context.SaveChangesAsync();
+            return Ok(player);
+        }
+
+        // Get game session
+        [HttpGet("status/{gameId}")]
+        public async Task<IActionResult> GetGameStatus(int gameId)
+        {
+            var game = await _context.GameSessions
+                .Include(g => g.HostPlayerId)
+                .Include(g => g.GuesserPlayerId)
+                .FirstOrDefaultAsync(g => g.Id == gameId);
+
+            if (game == null) return NotFound("Game not found");
+
             return Ok(game);
         }
     }
