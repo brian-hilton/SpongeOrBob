@@ -152,11 +152,11 @@
             }
           },
           {
-            "name": "lockInState",
+            "name": "lockinState",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "boolean"
+              "type": "string"
             }
           }
         ],

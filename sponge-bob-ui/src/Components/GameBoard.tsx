@@ -4,9 +4,10 @@ import {
   createGame,
   joinGame,
   sendGuess,
-  lockInGuess,
   selectWord,
+  handleLockIn,
 } from "../api/gameApi";
+import "../styles/GameBoard.css";
 
 const GameBoard = () => {
   const [gameId, setGameId] = useState<number | null>(null);
@@ -49,61 +50,87 @@ const GameBoard = () => {
     connection.invoke("SendGuess", gameId.toString(), playerId, word);
   };
 
-  const handleLockIn = async () => {
-    if (!gameId) return;
-    setLockedIn(!lockedIn);
-    await lockInGuess(playerId, !lockedIn);
-    connection.invoke("LockInGuess", gameId.toString(), playerId, !lockedIn);
-  };
-
-  const handleSelectWord = async (word: "Sponge" | "Bob") => {
-    if (!gameId || role !== "host") return;
-    setSelectedWord(word);
-    await selectWord(gameId, word);
-    connection.invoke("HostSelectWord", gameId.toString(), word);
-  };
-
   return (
-    <div className="game-board">
-      <h2>Sponge or Bob?</h2>
-      {!gameId ? (
-        <>
-          <button onClick={handleCreateGame}>Create Game</button>
-          <input
-            type="number"
-            placeholder="Enter Game ID"
-            value={tempGameId}
-            onChange={(e) => setTempGameId(e.target.value)}
-          />
-          <button onClick={handleJoinGame}>Join Game</button>{" "}
-        </>
-      ) : (
-        <>
-          <h3>Game ID: {gameId}</h3>
-          <h4>Role: {role}</h4>
-          {role === "host" ? (
-            <>
-              <p>Select the correct word:</p>
-              <button onClick={() => handleSelectWord("Sponge")}>Sponge</button>
-              <button onClick={() => handleSelectWord("Bob")}>Bob</button>
-            </>
-          ) : (
-            <>
-              <p>Make your guess:</p>
-              <button onClick={() => handleGuess("Sponge")}>Sponge</button>
-              <button onClick={() => handleGuess("Bob")}>Bob</button>
-            </>
-          )}
-          <button onClick={handleLockIn}>
-            {lockedIn ? "Unlock" : "Lock In"}
-          </button>
-          <p>
-            {selectedWord
-              ? `The correct word is: ${selectedWord}`
-              : "Waiting for host..."}
-          </p>
-        </>
-      )}
+    <div className="game-container">
+      <header className="game-header">
+        <h1>Sponge or Bob?</h1>
+        {gameId && <p className="game-id">Game ID: {gameId}</p>}
+      </header>
+
+      <div className="game-main">
+        {!gameId ? (
+          <div className="game-setup">
+            <button onClick={handleCreateGame}>Create Game</button>
+            <input
+              type="number"
+              placeholder="Enter Game ID"
+              value={tempGameId}
+              onChange={(e) => setTempGameId(e.target.value)}
+            />
+            <button onClick={handleJoinGame}>Join Game</button>
+          </div>
+        ) : (
+          <div className="game-board">
+            <h3>Role: {role}</h3>
+            <p className="lock-status">Locked In: {lockedIn ? "Yes" : "No"}</p>
+
+            {role === "host" ? (
+              <div className="selection-area">
+                <p>Select the correct word:</p>
+                <button
+                  className={selectedWord === "Sponge" ? "selected" : ""}
+                  onClick={() => setSelectedWord("Sponge")}
+                >
+                  Sponge
+                </button>
+                <button
+                  className={selectedWord === "Bob" ? "selected" : ""}
+                  onClick={() => setSelectedWord("Bob")}
+                >
+                  Bob
+                </button>
+              </div>
+            ) : (
+              <div className="selection-area">
+                <p>Make your guess:</p>
+                <button
+                  className={guess === "Sponge" ? "selected" : ""}
+                  onClick={() => handleGuess("Sponge")}
+                >
+                  Sponge
+                </button>
+                <button
+                  className={guess === "Bob" ? "selected" : ""}
+                  onClick={() => handleGuess("Bob")}
+                >
+                  Bob
+                </button>
+              </div>
+            )}
+
+            <div className="lock-buttons">
+              <button
+                className={lockedIn ? "selected" : ""}
+                onClick={() => handleLockIn(playerId, true)}
+              >
+                Lock In
+              </button>
+              <button
+                className={!lockedIn ? "selected" : ""}
+                onClick={() => handleLockIn(playerId, false)}
+              >
+                Unlock
+              </button>
+            </div>
+
+            <p>
+              {selectedWord
+                ? `The correct word is: ${selectedWord}`
+                : "Waiting for host..."}
+            </p>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

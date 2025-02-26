@@ -131,17 +131,32 @@ namespace SpongeBob.Controllers
 
         // Lock in
         [HttpPost("player/lockin/{playerId}/{lockinState}")]
-        public async Task<IActionResult> PlayerLockIn(string playerId, bool lockInState)
+        public async Task<IActionResult> PlayerLockIn(string playerId, string lockinState)
         {
-            var player = await _context.Players.FindAsync(playerId);
-            if (player == null) return NotFound("Player not found");
+            Console.WriteLine($"[DEBUG] Lock-in request: playerId={playerId}, lockinState={lockinState}");
 
-            player.LockedIn = lockInState;
+            bool isLocked;
+            if (!bool.TryParse(lockinState, out isLocked))  
+            {
+                Console.WriteLine("[ERROR] Invalid boolean value");
+                return BadRequest("Invalid boolean value");
+            }
+
+            var player = await _context.Players.FindAsync(playerId);
+            if (player == null)
+            {
+                Console.WriteLine($"[ERROR] Player {playerId} not found");
+                return NotFound("Player not found");
+            }
+
+            player.LockedIn = isLocked;
             await _context.SaveChangesAsync();
 
-            await _hubContext.Clients.Group(player.CurrentGameSessionId.ToString()).SendAsync("ReceiveLockIn", playerId, lockInState);
-            return Ok(player);
+            await _hubContext.Clients.Group(player.CurrentGameSessionId.ToString()).SendAsync("ReceiveLockIn", playerId, isLocked);
+
+            return Ok(new { playerId, isLocked });
         }
+
 
         // Get game session
         [HttpGet("status/{gameId}")]

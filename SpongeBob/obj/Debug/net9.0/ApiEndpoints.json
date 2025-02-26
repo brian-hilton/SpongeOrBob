@@ -97,8 +97,8 @@
         "IsRequired": true
       },
       {
-        "Name": "lockInState",
-        "Type": "System.Boolean",
+        "Name": "lockinState",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

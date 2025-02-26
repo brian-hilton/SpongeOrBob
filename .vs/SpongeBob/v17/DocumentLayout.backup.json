@@ -54,8 +54,7 @@
               "RelativeToolTip": "SpongeBob\\Hubs\\GameHub.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T22:43:42.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T22:43:42.038Z"
             },
             {
               "$type": "Document",
@@ -65,7 +64,7 @@
               "RelativeDocumentMoniker": "SpongeBob\\Controllers\\GameController.cs",
               "ToolTip": "C:\\repos\\SpongeBob\\SpongeBob\\Controllers\\GameController.cs",
               "RelativeToolTip": "SpongeBob\\Controllers\\GameController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAwDoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAqwIoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T21:59:14.784Z",
               "EditorCaption": ""
@@ -80,8 +79,7 @@
               "RelativeToolTip": "SpongeBob\\Models\\Player.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T21:47:24.009Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T21:47:24.009Z"
             },
             {
               "$type": "Document",
@@ -93,8 +91,7 @@
               "RelativeToolTip": "SpongeBob\\GameDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T21:44:21.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T21:44:21.255Z"
             },
             {
               "$type": "Document",
@@ -130,8 +127,7 @@
               "RelativeToolTip": "SpongeBob\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T21:11:03.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T21:11:03.069Z"
             }
           ]
         }
