@@ -154,7 +154,6 @@ C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\staticwebassets\msbuild.build.Spon
 C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.SpongeBob.props
 C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.SpongeBob.props
 C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\staticwebassets.pack.json
-C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\SpongeBob.csproj.Up2Date
 C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\SpongeBob.dll
 C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\refint\SpongeBob.dll
@@ -166,3 +165,7 @@ C:\repos\SpongeBob\SpongeBob\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\repos\SpongeBob\SpongeBob\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\SpongeBob.MvcApplicationPartsAssemblyInfo.cs
 C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\SpongeBob.sourcelink.json
+C:\repos\SpongeBob\SpongeBob\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\repos\SpongeBob\SpongeBob\bin\Debug\net9.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\repos\SpongeBob\SpongeBob\bin\Debug\net9.0\package-lock.json
+C:\repos\SpongeBob\SpongeBob\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

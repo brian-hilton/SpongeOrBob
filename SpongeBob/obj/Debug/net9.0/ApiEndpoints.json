@@ -8,8 +8,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "hostPlayerId",
-        "Type": "System.String",
+        "Name": "request",
+        "Type": "SpongeBob.Controllers.GameController\u002BCreateGameRequest",
         "IsRequired": true
       }
     ],
@@ -51,6 +51,32 @@
       },
       {
         "Name": "playerId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpongeBob.Controllers.GameController",
+    "Method": "PlayerGuess",
+    "RelativePath": "api/game/player/guess/{gameId}/{playerId}/{guess}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gameId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "playerId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "guess",
         "Type": "System.String",
         "IsRequired": true
       }

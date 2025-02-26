@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpongeBob")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db5555fe159d28c97cb1ebca12633f6becc1801c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88d39673f3fae178aa61c248f35858b7efc0ef75")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpongeBob")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpongeBob")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
