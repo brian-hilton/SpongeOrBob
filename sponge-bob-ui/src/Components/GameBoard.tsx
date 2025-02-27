@@ -72,7 +72,7 @@ const GameBoard = () => {
         ) : (
           <div className="game-board">
             <h3>Role: {role}</h3>
-            <p className="lock-status">Locked In: {lockedIn ? "Yes" : "No"}</p>
+            <p className="lock-status">Lock In: {lockedIn ? "Yes" : "No"}</p>
 
             {role === "host" ? (
               <div className="selection-area">
