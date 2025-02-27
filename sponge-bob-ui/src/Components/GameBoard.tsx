@@ -125,8 +125,8 @@ const GameBoard = () => {
 
             <p>
               {selectedWord
-                ? `The correct word is: ${selectedWord}`
-                : "Waiting for host..."}
+                ? `Choose your winning word: ${selectedWord}`
+                : "Waiting for Sponge Man to make up his mind..."}
             </p>
           </div>
         )}
