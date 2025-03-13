@@ -6,7 +6,7 @@
     width: 100%;
     height: 100vh;
     text-align: center;
-    background: linear-gradient(180deg, #00aaff, #0077cc);
+    background: linear-gradient(180deg, #76c2e9, #0077cc);
     font-family: "Comic Sans MS", cursive;
     color: white;
   }  
@@ -65,7 +65,7 @@
   }
 
   button {
-    background-color: #ffcc00;
+    background-color: #c5a938;
     color: black;
     font-size: 1.2em;
     padding: 10px 20px;
@@ -81,7 +81,7 @@
   }  
 
   button.selected {
-    background-color: #21a1f1 !important;
+    background-color: #1aa6fd !important;
     color: white;
     font-weight: bold;
     border: 2px solid white;
